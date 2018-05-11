@@ -46,7 +46,7 @@ namespace BlackJack
 
 		public void JoindrePartie(string IPJoin)
 		{
-			Thread threadJoin = new Thread(() => creeConnection(IPJoin));
+			new Thread(() => creeConnection(IPJoin));
 		}
 
 		private void creeConnection(string IPJoin)
