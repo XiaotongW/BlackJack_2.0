@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Partie
+namespace BlackJack
 {
-    public partial class Connection : Form
+    public partial class ConnectionForm : Form
     {
-        public Connection()
+        public ConnectionForm()
         {
             InitializeComponent();
+        }
+
+        private void ConnectionForm_Resize(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
             this.grpMenu = new System.Windows.Forms.GroupBox();
+            this.btnRetour = new System.Windows.Forms.Button();
             this.btnOption = new System.Windows.Forms.Button();
             this.btnRejoindre = new System.Windows.Forms.Button();
             this.btnCreer = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.txtNom = new System.Windows.Forms.TextBox();
             this.cmbJoueur = new System.Windows.Forms.ComboBox();
             this.picMenu = new System.Windows.Forms.PictureBox();
-            this.btnRetour = new System.Windows.Forms.Button();
             this.grpMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMenu)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,22 @@
             this.grpMenu.Size = new System.Drawing.Size(827, 196);
             this.grpMenu.TabIndex = 3;
             this.grpMenu.TabStop = false;
+            // 
+            // btnRetour
+            // 
+            this.btnRetour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnRetour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnRetour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRetour.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetour.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRetour.Location = new System.Drawing.Point(675, 16);
+            this.btnRetour.Name = "btnRetour";
+            this.btnRetour.Size = new System.Drawing.Size(130, 47);
+            this.btnRetour.TabIndex = 9;
+            this.btnRetour.Text = "retour";
+            this.btnRetour.UseVisualStyleBackColor = false;
+            this.btnRetour.Visible = false;
+            this.btnRetour.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnOption
             // 
@@ -188,22 +204,6 @@
             this.picMenu.Size = new System.Drawing.Size(899, 487);
             this.picMenu.TabIndex = 0;
             this.picMenu.TabStop = false;
-            // 
-            // btnRetour
-            // 
-            this.btnRetour.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnRetour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnRetour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRetour.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRetour.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnRetour.Location = new System.Drawing.Point(675, 16);
-            this.btnRetour.Name = "btnRetour";
-            this.btnRetour.Size = new System.Drawing.Size(130, 47);
-            this.btnRetour.TabIndex = 9;
-            this.btnRetour.Text = "retour";
-            this.btnRetour.UseVisualStyleBackColor = false;
-            this.btnRetour.Visible = false;
-            this.btnRetour.Click += new System.EventHandler(this.button1_Click);
             // 
             // MenuPartie
             // 

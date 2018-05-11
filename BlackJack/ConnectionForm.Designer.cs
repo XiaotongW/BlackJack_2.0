@@ -1,6 +1,6 @@
-﻿namespace Partie
+﻿namespace BlackJack
 {
-    partial class Connection
+    partial class ConnectionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,23 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.imgConnection = new System.Windows.Forms.PictureBox();
             this.lblConnection = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.imgConnection)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imgConnection
-            // 
-            this.imgConnection.Image = global::BlackJack.RessImages.rideau;
-            this.imgConnection.Location = new System.Drawing.Point(-6, -4);
-            this.imgConnection.Name = "imgConnection";
-            this.imgConnection.Size = new System.Drawing.Size(1225, 581);
-            this.imgConnection.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgConnection.TabIndex = 0;
-            this.imgConnection.TabStop = false;
             // 
             // lblConnection
             // 
+            this.lblConnection.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblConnection.AutoSize = true;
             this.lblConnection.BackColor = System.Drawing.Color.Transparent;
             this.lblConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -54,26 +45,26 @@
             this.lblConnection.Size = new System.Drawing.Size(412, 69);
             this.lblConnection.TabIndex = 1;
             this.lblConnection.Text = "Connection ...";
+            this.lblConnection.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Connection
+            // ConnectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::BlackJack.RessImages.rideau;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1215, 572);
             this.Controls.Add(this.lblConnection);
-            this.Controls.Add(this.imgConnection);
-            this.Name = "Connection";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.imgConnection)).EndInit();
+            this.Name = "ConnectionForm";
+            this.Text = "Connection";
+            this.Resize += new System.EventHandler(this.ConnectionForm_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox imgConnection;
         private System.Windows.Forms.Label lblConnection;
     }
 }

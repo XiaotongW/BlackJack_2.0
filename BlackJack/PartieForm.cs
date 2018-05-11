@@ -10,26 +10,19 @@ using System.Windows.Forms;
 
 namespace BlackJack
 {
-<<<<<<< HEAD
+
     public partial class PartieForm : Form
     {
         Partie partie;
+        ConnectionForm FormConnection;
         public PartieForm(Partie partie)
         {
             this.partie = partie;
             InitializeComponent();
+            FormConnection = new ConnectionForm();
+            FormConnection.Show();
+            FormConnection.TopMost = true;
         }
     }
-=======
-	public partial class PartieForm : Form
-	{
-		Partie partie;
-		public PartieForm(Partie partie)
-		{
-			this.partie = partie;
-			InitializeComponent();
-		}
-	}
->>>>>>> 2e59c6c6766e4750cd4faf524afc6e665d7be040
 }
 
