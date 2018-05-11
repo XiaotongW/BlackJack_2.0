@@ -21,12 +21,10 @@ namespace BlackJack
 			this.Min = Min;
 			this.Max = Max;
 			TJoueur = new Joueurs[nbJoueur];
-			// Initier l'argent des joueurs
-			for (int ID_J = 0; ID_J < nbJoueur; ID_J++)
-				TJoueur[ID_J].Argent = ArgentDebut;
 			paquet = new Paquet(nbPaquet);
 			formPartie = new PartieForm(this);
 			formPartie.Show();
+			
 		}
 		public int Min
 		{
@@ -59,6 +57,14 @@ namespace BlackJack
 			string[] nomJoueur = Nom.Split(new char[1] { ';' });
 			TJoueur[int.Parse(nomJoueur[0])].Nom = nomJoueur[1];
 		}
+		public void EnvoyerTous (string message)
+		{
+			for (int i = 0; i < TJoueur.Count(); i++)
+			{
+				TJoueur[i].netJoueur.envoyerMessage(message);
+			}
+		}
+
 		public void distribuerInfo(int IDReception, string message)
 		{
 			int Next;
