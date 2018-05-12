@@ -33,7 +33,7 @@ namespace BlackJack
 
 		public string imgCarte
 		{
-			get { return string.Format("{0}_{1}.png", figure, type); }
+			get { return string.Format("_{0}_{1}.png", figure, type); }
 		}
 
 		public string Type

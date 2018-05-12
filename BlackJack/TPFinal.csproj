@@ -64,7 +64,6 @@
       <DependentUpon>MenuPartie.cs</DependentUpon>
     </Compile>
     <Compile Include="Net.cs" />
-    <Compile Include="NetClient.cs" />
     <Compile Include="MenuOption.cs">
       <SubType>Form</SubType>
     </Compile>
