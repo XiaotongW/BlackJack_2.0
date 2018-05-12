@@ -133,7 +133,7 @@ namespace BlackJack
 			// Envoyer Message du client à l'Host
 			try
 			{
-				writer.WriteLine("{0},{1}", IDJoueur, message);
+				writer.WriteLine("{0};{1}", IDJoueur, message);
 			}
 			catch (Exception ex)
 			{

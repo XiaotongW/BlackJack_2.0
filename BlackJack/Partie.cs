@@ -28,11 +28,13 @@ namespace BlackJack
 		}
 		public int Min
 		{
+			// Mise Minimal
 			get;
 			set;
 		}		
 		public int Max
 		{
+			//Mise Maximal
 			get;
 			set;
 		}
@@ -51,22 +53,26 @@ namespace BlackJack
 		{
 			get { return TJoueur[ID]; }
 		}
+
 		public void RecevoirNomJoueur(string Nom)
 		{
 			//IDJoueur;Nom Joueur
 			string[] nomJoueur = Nom.Split(new char[1] { ';' });
 			TJoueur[int.Parse(nomJoueur[0])].Nom = nomJoueur[1];
 		}
+
 		public void EnvoyerTous (string message)
 		{
+			//Envoi un message à tous les joueurs
 			for (int i = 0; i < TJoueur.Count(); i++)
 			{
-				TJoueur[i].netJoueur.envoyerMessage(message);
+				TJoueur[i].Network.envoyerMessage(message);
 			}
 		}
 
 		public void distribuerInfo(int IDReception, string message)
 		{
+			// Envoie les information à tous les autres joueurs
 			int Next;
 			Next = IDReception-1;
 			do
@@ -74,7 +80,7 @@ namespace BlackJack
 				if (Next >= 3)
 					Next = 0;
 				if (TJoueur[Next] != null)
-					TJoueur[Next].netJoueur.envoyerMessage(message, IDReception);
+					TJoueur[Next].Network.envoyerMessage(message, IDReception);
 				Next++; 
 			} while (Next != IDReception);
 		}

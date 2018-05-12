@@ -9,12 +9,19 @@ namespace BlackJack
 {
 	public class Joueurs
 	{
-		public Joueurs(string nom)
+		public Joueurs(string nom, int nbrJoueur)
 		{
+			// Joueur local
 			Nom = nom;
 			Main = new Main();
+			Network = new Net(nbrJoueur);
 		}
-
+		public Joueurs(string nom, string IPAddrs)
+		{
+			// Joueurs Client 
+			Nom = nom;
+			Network = new Net(IPAddrs);
+		}
 		public string Nom
 		{
 			get;
@@ -23,10 +30,16 @@ namespace BlackJack
 
 		public int ID
 		{
-			get { return netJoueur.ID; }
+			get { return Network.ID; }
 		}
 
-		public Net netJoueur
+		public bool IsHost
+		{
+			get;
+			set;
+		}
+
+		public Net Network
 		{
 			get;
 			private set;
@@ -51,7 +64,7 @@ namespace BlackJack
 
 		private void creeConnection(string IPJoin)
 		{
-			netJoueur = new Net(IPJoin);
+			Network = new Net(IPJoin);
 		}
 	}
 }
