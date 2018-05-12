@@ -15,12 +15,13 @@ namespace BlackJack
 			Nom = nom;
 			Main = new Main();
 			Network = new Net(nbrJoueur);
+			ID = Network.ID;
 		}
-		public Joueurs(string nom, string IPAddrs)
+		public Joueurs(string nom)
 		{
 			// Joueurs Client 
 			Nom = nom;
-			Network = new Net(IPAddrs);
+			Main = new Main();
 		}
 		public string Nom
 		{
@@ -30,7 +31,8 @@ namespace BlackJack
 
 		public int ID
 		{
-			get { return Network.ID; }
+			get;
+			set;
 		}
 
 		public bool IsHost
@@ -57,9 +59,15 @@ namespace BlackJack
 			set;
 		}
 
+		public void envoyerNom()
+		{
+			Network.envoyerMessage(ID.ToString() + ";" + Nom);
+		}
+
 		public void JoindrePartie(string IPJoin)
 		{
-			new Thread(() => creeConnection(IPJoin));
+			//new Thread(() => creeConnection(IPJoin));
+			creeConnection(IPJoin);
 		}
 
 		private void creeConnection(string IPJoin)

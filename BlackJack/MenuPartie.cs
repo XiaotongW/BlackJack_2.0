@@ -19,11 +19,6 @@ namespace BlackJack
             FormOption = new MenuOption();
       }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void btnCreer_Click(object sender, EventArgs e)
         {
             lblNom.Visible = false;
@@ -38,8 +33,11 @@ namespace BlackJack
 
         private void btnHeberger_Click(object sender, EventArgs e)
         {
-            Partie laPartie = new Partie(cmbJoueur.SelectedIndex,FormOption.NbPaquet,FormOption.MiseMin,FormOption.MiseMax, FormOption.Argent);
-            FormOption.Close();
+			if (txtNom.Text != "")
+			{
+				Partie laPartie = new Partie(txtNom.Text, cmbJoueur.SelectedIndex,FormOption.NbPaquet,FormOption.MiseMin,FormOption.MiseMax, FormOption.Argent);
+				FormOption.Close();
+			}
         }
 
         private void btnRejoindre_Click(object sender, EventArgs e)
@@ -72,5 +70,13 @@ namespace BlackJack
         {
             FormOption.Show();
         }
-    }
+
+		private void btnConnection_MouseClick(object sender, MouseEventArgs e)
+		{
+			if (txtNom.Text != "" && txtIP.Text != "")
+			{
+				Partie laPartie = new Partie(txtNom.Text, txtIP.Text);
+			}
+		}
+	}
 }
