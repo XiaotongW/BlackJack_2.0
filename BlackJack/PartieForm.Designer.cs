@@ -70,6 +70,9 @@
             this.lbBank = new System.Windows.Forms.Label();
             this.img_btnHit = new System.Windows.Forms.PictureBox();
             this.img_btnStand = new System.Windows.Forms.PictureBox();
+            this.txtMise = new System.Windows.Forms.TextBox();
+            this.lblMise = new System.Windows.Forms.Label();
+            this.btnMiser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.img_C1_J1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_C2_J1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_C3_J1)).BeginInit();
@@ -104,7 +107,7 @@
             // 
             this.img_C1_J1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C1_J1.Location = new System.Drawing.Point(157, 495);
-            this.img_C1_J1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C1_J1.Margin = new System.Windows.Forms.Padding(2);
             this.img_C1_J1.Name = "img_C1_J1";
             this.img_C1_J1.Size = new System.Drawing.Size(75, 119);
             this.img_C1_J1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +118,7 @@
             // 
             this.img_C2_J1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C2_J1.Location = new System.Drawing.Point(179, 495);
-            this.img_C2_J1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C2_J1.Margin = new System.Windows.Forms.Padding(2);
             this.img_C2_J1.Name = "img_C2_J1";
             this.img_C2_J1.Size = new System.Drawing.Size(75, 119);
             this.img_C2_J1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +129,7 @@
             // 
             this.img_C3_J1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C3_J1.Location = new System.Drawing.Point(203, 495);
-            this.img_C3_J1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C3_J1.Margin = new System.Windows.Forms.Padding(2);
             this.img_C3_J1.Name = "img_C3_J1";
             this.img_C3_J1.Size = new System.Drawing.Size(75, 119);
             this.img_C3_J1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +140,7 @@
             // 
             this.img_C4_J1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C4_J1.Location = new System.Drawing.Point(228, 495);
-            this.img_C4_J1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C4_J1.Margin = new System.Windows.Forms.Padding(2);
             this.img_C4_J1.Name = "img_C4_J1";
             this.img_C4_J1.Size = new System.Drawing.Size(75, 119);
             this.img_C4_J1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -148,7 +151,7 @@
             // 
             this.img_C5_J1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C5_J1.Location = new System.Drawing.Point(251, 495);
-            this.img_C5_J1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C5_J1.Margin = new System.Windows.Forms.Padding(2);
             this.img_C5_J1.Name = "img_C5_J1";
             this.img_C5_J1.Size = new System.Drawing.Size(75, 119);
             this.img_C5_J1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -159,7 +162,7 @@
             // 
             this.img_C5_J2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C5_J2.Location = new System.Drawing.Point(498, 594);
-            this.img_C5_J2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C5_J2.Margin = new System.Windows.Forms.Padding(2);
             this.img_C5_J2.Name = "img_C5_J2";
             this.img_C5_J2.Size = new System.Drawing.Size(75, 119);
             this.img_C5_J2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +173,7 @@
             // 
             this.img_C4_J2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C4_J2.Location = new System.Drawing.Point(475, 594);
-            this.img_C4_J2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C4_J2.Margin = new System.Windows.Forms.Padding(2);
             this.img_C4_J2.Name = "img_C4_J2";
             this.img_C4_J2.Size = new System.Drawing.Size(75, 119);
             this.img_C4_J2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,7 +184,7 @@
             // 
             this.img_C3_J2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C3_J2.Location = new System.Drawing.Point(451, 594);
-            this.img_C3_J2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C3_J2.Margin = new System.Windows.Forms.Padding(2);
             this.img_C3_J2.Name = "img_C3_J2";
             this.img_C3_J2.Size = new System.Drawing.Size(75, 119);
             this.img_C3_J2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +195,7 @@
             // 
             this.img_C2_J2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C2_J2.Location = new System.Drawing.Point(427, 594);
-            this.img_C2_J2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C2_J2.Margin = new System.Windows.Forms.Padding(2);
             this.img_C2_J2.Name = "img_C2_J2";
             this.img_C2_J2.Size = new System.Drawing.Size(75, 119);
             this.img_C2_J2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,7 +206,7 @@
             // 
             this.img_C1_J2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C1_J2.Location = new System.Drawing.Point(404, 594);
-            this.img_C1_J2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C1_J2.Margin = new System.Windows.Forms.Padding(2);
             this.img_C1_J2.Name = "img_C1_J2";
             this.img_C1_J2.Size = new System.Drawing.Size(75, 119);
             this.img_C1_J2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,7 +217,7 @@
             // 
             this.img_C5_J3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C5_J3.Location = new System.Drawing.Point(768, 594);
-            this.img_C5_J3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C5_J3.Margin = new System.Windows.Forms.Padding(2);
             this.img_C5_J3.Name = "img_C5_J3";
             this.img_C5_J3.Size = new System.Drawing.Size(75, 119);
             this.img_C5_J3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -225,7 +228,7 @@
             // 
             this.img_C4_J3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C4_J3.Location = new System.Drawing.Point(745, 594);
-            this.img_C4_J3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C4_J3.Margin = new System.Windows.Forms.Padding(2);
             this.img_C4_J3.Name = "img_C4_J3";
             this.img_C4_J3.Size = new System.Drawing.Size(75, 119);
             this.img_C4_J3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,7 +239,7 @@
             // 
             this.img_C3_J3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C3_J3.Location = new System.Drawing.Point(721, 594);
-            this.img_C3_J3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C3_J3.Margin = new System.Windows.Forms.Padding(2);
             this.img_C3_J3.Name = "img_C3_J3";
             this.img_C3_J3.Size = new System.Drawing.Size(75, 119);
             this.img_C3_J3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -247,7 +250,7 @@
             // 
             this.img_C2_J3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C2_J3.Location = new System.Drawing.Point(697, 594);
-            this.img_C2_J3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C2_J3.Margin = new System.Windows.Forms.Padding(2);
             this.img_C2_J3.Name = "img_C2_J3";
             this.img_C2_J3.Size = new System.Drawing.Size(75, 119);
             this.img_C2_J3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -258,7 +261,7 @@
             // 
             this.img_C1_J3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C1_J3.Location = new System.Drawing.Point(674, 594);
-            this.img_C1_J3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C1_J3.Margin = new System.Windows.Forms.Padding(2);
             this.img_C1_J3.Name = "img_C1_J3";
             this.img_C1_J3.Size = new System.Drawing.Size(75, 119);
             this.img_C1_J3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -269,7 +272,7 @@
             // 
             this.img_C5_J4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C5_J4.Location = new System.Drawing.Point(1022, 495);
-            this.img_C5_J4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C5_J4.Margin = new System.Windows.Forms.Padding(2);
             this.img_C5_J4.Name = "img_C5_J4";
             this.img_C5_J4.Size = new System.Drawing.Size(75, 119);
             this.img_C5_J4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -280,7 +283,7 @@
             // 
             this.img_C4_J4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C4_J4.Location = new System.Drawing.Point(1000, 495);
-            this.img_C4_J4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C4_J4.Margin = new System.Windows.Forms.Padding(2);
             this.img_C4_J4.Name = "img_C4_J4";
             this.img_C4_J4.Size = new System.Drawing.Size(75, 119);
             this.img_C4_J4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -291,7 +294,7 @@
             // 
             this.img_C3_J4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C3_J4.Location = new System.Drawing.Point(974, 495);
-            this.img_C3_J4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C3_J4.Margin = new System.Windows.Forms.Padding(2);
             this.img_C3_J4.Name = "img_C3_J4";
             this.img_C3_J4.Size = new System.Drawing.Size(75, 119);
             this.img_C3_J4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -302,7 +305,7 @@
             // 
             this.img_C2_J4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C2_J4.Location = new System.Drawing.Point(950, 495);
-            this.img_C2_J4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C2_J4.Margin = new System.Windows.Forms.Padding(2);
             this.img_C2_J4.Name = "img_C2_J4";
             this.img_C2_J4.Size = new System.Drawing.Size(75, 119);
             this.img_C2_J4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -313,7 +316,7 @@
             // 
             this.img_C1_J4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C1_J4.Location = new System.Drawing.Point(929, 495);
-            this.img_C1_J4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C1_J4.Margin = new System.Windows.Forms.Padding(2);
             this.img_C1_J4.Name = "img_C1_J4";
             this.img_C1_J4.Size = new System.Drawing.Size(75, 119);
             this.img_C1_J4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -324,7 +327,7 @@
             // 
             this.img_C5_C.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C5_C.Location = new System.Drawing.Point(786, 101);
-            this.img_C5_C.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C5_C.Margin = new System.Windows.Forms.Padding(2);
             this.img_C5_C.Name = "img_C5_C";
             this.img_C5_C.Size = new System.Drawing.Size(75, 119);
             this.img_C5_C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -335,7 +338,7 @@
             // 
             this.img_C4_C.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C4_C.Location = new System.Drawing.Point(694, 101);
-            this.img_C4_C.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C4_C.Margin = new System.Windows.Forms.Padding(2);
             this.img_C4_C.Name = "img_C4_C";
             this.img_C4_C.Size = new System.Drawing.Size(75, 119);
             this.img_C4_C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -346,7 +349,7 @@
             // 
             this.img_C3_C.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C3_C.Location = new System.Drawing.Point(600, 101);
-            this.img_C3_C.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C3_C.Margin = new System.Windows.Forms.Padding(2);
             this.img_C3_C.Name = "img_C3_C";
             this.img_C3_C.Size = new System.Drawing.Size(75, 119);
             this.img_C3_C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -357,7 +360,7 @@
             // 
             this.img_C2_C.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C2_C.Location = new System.Drawing.Point(509, 101);
-            this.img_C2_C.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C2_C.Margin = new System.Windows.Forms.Padding(2);
             this.img_C2_C.Name = "img_C2_C";
             this.img_C2_C.Size = new System.Drawing.Size(75, 119);
             this.img_C2_C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -368,7 +371,7 @@
             // 
             this.img_C1_C.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.img_C1_C.Location = new System.Drawing.Point(414, 101);
-            this.img_C1_C.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.img_C1_C.Margin = new System.Windows.Forms.Padding(2);
             this.img_C1_C.Name = "img_C1_C";
             this.img_C1_C.Size = new System.Drawing.Size(75, 119);
             this.img_C1_C.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -510,7 +513,7 @@
             this.lst_feed.FormattingEnabled = true;
             this.lst_feed.ItemHeight = 17;
             this.lst_feed.Location = new System.Drawing.Point(6, 5);
-            this.lst_feed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lst_feed.Margin = new System.Windows.Forms.Padding(2);
             this.lst_feed.Name = "lst_feed";
             this.lst_feed.Size = new System.Drawing.Size(208, 189);
             this.lst_feed.TabIndex = 34;
@@ -523,9 +526,9 @@
             this.grpJoueur.Controls.Add(this.lb_Argent);
             this.grpJoueur.Controls.Add(this.lbBank);
             this.grpJoueur.Location = new System.Drawing.Point(11, 652);
-            this.grpJoueur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpJoueur.Margin = new System.Windows.Forms.Padding(2);
             this.grpJoueur.Name = "grpJoueur";
-            this.grpJoueur.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpJoueur.Padding = new System.Windows.Forms.Padding(2);
             this.grpJoueur.Size = new System.Drawing.Size(203, 110);
             this.grpJoueur.TabIndex = 37;
             this.grpJoueur.TabStop = false;
@@ -601,12 +604,48 @@
             this.img_btnStand.TabIndex = 39;
             this.img_btnStand.TabStop = false;
             // 
+            // txtMise
+            // 
+            this.txtMise.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMise.Location = new System.Drawing.Point(613, 378);
+            this.txtMise.Name = "txtMise";
+            this.txtMise.Size = new System.Drawing.Size(132, 26);
+            this.txtMise.TabIndex = 40;
+            // 
+            // lblMise
+            // 
+            this.lblMise.AutoSize = true;
+            this.lblMise.BackColor = System.Drawing.Color.Transparent;
+            this.lblMise.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMise.ForeColor = System.Drawing.Color.Goldenrod;
+            this.lblMise.Location = new System.Drawing.Point(355, 378);
+            this.lblMise.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMise.Name = "lblMise";
+            this.lblMise.Size = new System.Drawing.Size(253, 24);
+            this.lblMise.TabIndex = 41;
+            this.lblMise.Text = "Veuillez entre votre mise :";
+            this.lblMise.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnMiser
+            // 
+            this.btnMiser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMiser.Location = new System.Drawing.Point(759, 378);
+            this.btnMiser.Name = "btnMiser";
+            this.btnMiser.Size = new System.Drawing.Size(75, 26);
+            this.btnMiser.TabIndex = 42;
+            this.btnMiser.Text = "Miser !";
+            this.btnMiser.UseVisualStyleBackColor = true;
+            this.btnMiser.Click += new System.EventHandler(this.btnMiser_Click);
+            // 
             // PartieForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BlackJack.RessImages.table_blackjack;
             this.ClientSize = new System.Drawing.Size(1279, 796);
+            this.Controls.Add(this.btnMiser);
+            this.Controls.Add(this.lblMise);
+            this.Controls.Add(this.txtMise);
             this.Controls.Add(this.img_btnStand);
             this.Controls.Add(this.img_btnHit);
             this.Controls.Add(this.grpJoueur);
@@ -645,7 +684,7 @@
             this.Controls.Add(this.img_C3_J1);
             this.Controls.Add(this.img_C2_J1);
             this.Controls.Add(this.img_C1_J1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1295, 835);
             this.MinimumSize = new System.Drawing.Size(1295, 694);
             this.Name = "PartieForm";
@@ -728,5 +767,8 @@
         private System.Windows.Forms.Label lbBank;
         private System.Windows.Forms.PictureBox img_btnHit;
         private System.Windows.Forms.PictureBox img_btnStand;
+        private System.Windows.Forms.TextBox txtMise;
+        private System.Windows.Forms.Label lblMise;
+        private System.Windows.Forms.Button btnMiser;
     }
 }

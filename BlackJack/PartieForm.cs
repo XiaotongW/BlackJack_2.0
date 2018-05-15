@@ -23,7 +23,12 @@ namespace BlackJack
             FormConnection.Show();
             FormConnection.TopMost = true;
         }
-
+        public void AfficherMise()
+        {
+            btnMiser.Visible = true;
+            lblMise.Visible = true;
+            txtMise.Visible = true;
+        }
         public void RecevoirNom(int ID, string Nom) //Recoit en parametre les noms de joueurs et les attributs au bon joueur
         {
             switch (ID)
@@ -215,18 +220,26 @@ namespace BlackJack
             switch (ID)
             {
                 case 1://joueur 1
-                    lb_Nom_J1.Text = Mise.ToString();
+                    lb_Mise_J1.Text = Mise.ToString();
                     break;
                 case 2://joueur 2
-                    lb_Nom_J2.Text = Mise.ToString();
+                    lb_Mise_J2.Text = Mise.ToString();
                     break;
                 case 3://joueur 3
-                    lb_Nom_J3.Text = Mise.ToString();
+                    lb_Mise_J3.Text = Mise.ToString();
                     break;
                 case 4://joueur 4
-                    lb_Nom_J4.Text = Mise.ToString();
+                    lb_Mise_J4.Text = Mise.ToString();
                     break;
             }
+        }
+
+        private void btnMiser_Click(object sender, EventArgs e)
+        {
+            btnMiser.Visible = false;
+            lblMise.Visible = false;
+            txtMise.Visible = false;
+            int.Parse(txtMise.Text);
         }
     }
 }

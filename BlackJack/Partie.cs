@@ -13,6 +13,7 @@ namespace BlackJack
 		Paquet paquet;//paquet
 		PartieForm formPartie;
 		int JoueurTour;
+        bool isOnline;
 		public delegate void RecevoirNom(string nomJoueur);
 		public RecevoirNom NomJoueur;
 
@@ -27,17 +28,33 @@ namespace BlackJack
 			paquet = new Paquet(nbPaquet);
 			formPartie = new PartieForm(this);
 			formPartie.Show();
-			//NomJoueur = new RecevoirNom(RecevoirNomJoueur);
-			for (int i = 1; i < nbJoueur; i++)
-			{
-				TJoueur[i] = new Joueurs("");
-				TJoueur[i].Network.ID = i;
-				RecevoirNomJoueur(unJoueur.Network.recevoirMessage(i));
-			}
-			for (int i = nbJoueur; i <0 ; i--)
-			{
-				distribuerInfo(TJoueur[i].ID,TJoueur[i].Nom);
-			}
+            if (nbJoueur == 1)
+            {
+                isOnline = false;
+            }
+            else {
+                isOnline = true;
+            }
+
+            //NomJoueur = new RecevoirNom(RecevoirNomJoueur);
+            if (isOnline)
+            {
+                for (int i = 1; i < nbJoueur; i++)
+                {
+                    TJoueur[i] = new Joueurs("");
+                    TJoueur[i].Network.ID = i;
+                    RecevoirNomJoueur(unJoueur.Network.recevoirMessage(i));
+                }
+                for (int i = nbJoueur; i < 0; i--)
+                {
+                    distribuerInfo(TJoueur[i].ID, TJoueur[i].Nom);
+                }
+            }
+            else {
+                formPartie.RecevoirNom(1, nom);
+                formPartie.RecevoirArgent(ArgentDebut);
+                PartieSolo();
+            }
 
 		}
 		public Partie(string nom, string IpAddrs)//Counstrusteur pour client
@@ -64,6 +81,12 @@ namespace BlackJack
 			}
 			
 		}
+
+        public void PartieSolo()
+        {
+            formPartie.AfficherMise();
+        }
+            
 		public int Min
 		{
 			// Mise Minimal
