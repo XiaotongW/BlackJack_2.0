@@ -28,7 +28,7 @@ namespace BlackJack
 			paquet = new Paquet(nbPaquet);
 			formPartie = new PartieForm(this);
 			formPartie.Show();
-<<<<<<< HEAD
+
 			for (int i = 1; i <= nbJoueur-1; i++)
 			{
 				TJoueur[i] = new Joueurs("");
@@ -39,7 +39,7 @@ namespace BlackJack
 			{
 				distribuerInfo(TJoueur[i].ID,TJoueur[i].Nom);
 			}
-=======
+
             if (nbJoueur == 1)
             {
                 isOnline = false;
@@ -67,8 +67,6 @@ namespace BlackJack
                 formPartie.RecevoirArgent(ArgentDebut);
                 PartieSolo();
             }
->>>>>>> c91641e8b8de9f816d77311c643f43a5eb7969cc
-
 		}
 		public Partie(string nom, string IpAddrs)//Counstrusteur pour client
 		{

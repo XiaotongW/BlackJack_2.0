@@ -41,11 +41,8 @@ namespace BlackJack
 				socketClient = listener.AcceptSocket();
 				if (socketClient.Connected)
 				{
-<<<<<<< HEAD
 					nbConnect++;
-=======
                     MessageBox.Show("Connected");
->>>>>>> c91641e8b8de9f816d77311c643f43a5eb7969cc
 					nsFlux = new NetworkStream(socketClient);
 					switch (nbConnect)
 					{
