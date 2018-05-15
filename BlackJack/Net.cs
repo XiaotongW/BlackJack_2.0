@@ -13,7 +13,7 @@ namespace BlackJack
 	public class Net
 	{
 		const int Port = 8000;
-		static TcpListener listener;
+		TcpListener listener;
 		TcpClient client;
 		NetworkStream nsFlux;
 		Socket socketClient;
@@ -34,13 +34,14 @@ namespace BlackJack
 			listener = new TcpListener(IPAddress.Any, Port);
 			listener.Start();
 			ID = 1;
-			int nbConnect = 2;
+			int nbConnect = 1;
 
-			while (nbConnect != NbJoueur+1) // Boucle jusqu'a ce que tous les joueur soient connecter 
+			while (nbConnect < NbJoueur) // Boucle jusqu'a ce que tous les joueur soient connecter 
 			{
 				socketClient = listener.AcceptSocket();
 				if (socketClient.Connected)
 				{
+					nbConnect++;
 					nsFlux = new NetworkStream(socketClient);
 					switch (nbConnect)
 					{
@@ -60,12 +61,17 @@ namespace BlackJack
 							envoyerMessage(nbConnect.ToString(), nbConnect); // Envoi L'ID au joueur 4
 							break;
 					}
-					nbConnect++;
 				}
 			}
 		}
+
 		public Net(string IPaddr) // crée Client
 		{
+			//Socket server;
+			//IPEndPoint ipep = new IPEndPoint(IPAddress.Parse(IPaddr), 8000);
+			//server = new Socket(AddressFamily.InterNetwork, SocketType.Stream,
+			//						ProtocolType.Tcp);
+			//server.Connect(ipep);
 			try
 			{
 				IP = IPaddr;
@@ -78,7 +84,7 @@ namespace BlackJack
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show(String.Format("NetClient : "+ex.ToString()));
 			}
 		}
 
@@ -125,7 +131,7 @@ namespace BlackJack
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show("envoyerMessage Serv : "+ex.ToString());
 			}
 		}
 		public void envoyerMessage(string message)
@@ -133,11 +139,11 @@ namespace BlackJack
 			// Envoyer Message du client à l'Host
 			try
 			{
-				writer.WriteLine("{0};{1}", IDJoueur, message);
+				writer.WriteLine("{0};{1}", ID, message);
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show("envoyer Message Client : "+ex.ToString());
 				writer.Close();
 			}
 			finally
@@ -166,7 +172,7 @@ namespace BlackJack
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show("Recevoir Message Serv : "+ex.ToString());
 			}
 			return leMessage;
 		}
@@ -180,10 +186,10 @@ namespace BlackJack
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show(ex.ToString());
+				MessageBox.Show("Recevoir Message Client : "+ex.ToString());
 				reader.Close();
 			}
-			MessageBox.Show(leMessage);
+			//MessageBox.Show(leMessage);
 			return leMessage;
 		}
 	}

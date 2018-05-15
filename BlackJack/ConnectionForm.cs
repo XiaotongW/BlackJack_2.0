@@ -16,9 +16,5 @@ namespace BlackJack
         {
             InitializeComponent();
         }
-
-        private void ConnectionForm_Resize(object sender, EventArgs e)
-        {
-        }
     }
 }

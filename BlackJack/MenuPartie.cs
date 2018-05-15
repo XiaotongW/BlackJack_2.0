@@ -35,7 +35,7 @@ namespace BlackJack
         {
 			if (txtNom.Text != "")
 			{
-				Partie laPartie = new Partie(txtNom.Text, cmbJoueur.SelectedIndex,FormOption.NbPaquet,FormOption.MiseMin,FormOption.MiseMax, FormOption.Argent);
+				Partie laPartie = new Partie(txtNom.Text, cmbJoueur.SelectedIndex+1,FormOption.NbPaquet,FormOption.MiseMin,FormOption.MiseMax, FormOption.Argent);
 				FormOption.Close();
 			}
         }

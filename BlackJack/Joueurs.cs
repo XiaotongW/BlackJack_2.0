@@ -66,13 +66,13 @@ namespace BlackJack
 
 		public void JoindrePartie(string IPJoin)
 		{
-			//new Thread(() => creeConnection(IPJoin));
-			creeConnection(IPJoin);
+			new Thread(() => creeConnection(IPJoin));
 		}
 
 		private void creeConnection(string IPJoin)
 		{
 			Network = new Net(IPJoin);
+			ID = Network.ID;
 		}
 	}
 }

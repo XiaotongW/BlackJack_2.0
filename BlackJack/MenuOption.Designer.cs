@@ -88,7 +88,6 @@
             this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Argent de départ :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -99,7 +98,6 @@
             this.label2.Size = new System.Drawing.Size(148, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Mise minimum :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -120,7 +118,6 @@
             this.label4.Size = new System.Drawing.Size(188, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Nombre de paquets :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btnAppliquer
             // 

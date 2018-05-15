@@ -17,11 +17,6 @@ namespace BlackJack
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtNbPaquet_KeyPress(object sender, KeyPressEventArgs e)
         {
             int indInt = 2;
@@ -83,16 +78,6 @@ namespace BlackJack
                 txtArgent.Text = "";
                 MessageBox.Show("Veuiller entrer un nombre");
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnAppliquer_Click(object sender, EventArgs e)
